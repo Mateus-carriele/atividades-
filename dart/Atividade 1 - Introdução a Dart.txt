@@ -1,0 +1,69 @@
+1)
+void main() {
+  var salaro = 1000.00;
+  var imposto = salaro*0.1;
+  var receber = salaro-imposto;
+  print("o seu salario é $receber");
+}
+
+2)
+void main() {
+  var c = 30.0;
+  var f = c * 1.8 + 32;
+  var k = (f + 459.67)/1.8;
+  print("Celsius $c ");
+  print("Fahrenheit $f ");
+  print("Kelvin $k ");
+}
+
+
+3)
+void main() {
+  var segundos = 36126;
+  
+  var hr = segundos/3600;
+  var aux1 = segundos%3600;
+  var mim = aux1/60;
+  var seg = aux1%60;
+
+
+  print("hr :$hr ");
+  print("mim:  $mim ");
+  print("seg: $seg ");
+}
+4)
+void main() {
+  var valor = 11543;
+  var troco = valor;
+
+  var cem = troco ~/ 100;
+  troco = troco - (cem * 100);
+
+  var cinquenta = troco ~/ 50;
+  troco = troco - (cinquenta * 50);
+
+  var vinte = troco ~/ 20;
+  troco = troco - (vinte * 20);
+
+  var dez = troco ~/ 10;
+  troco = troco - (dez * 10);
+
+  var cinco = troco ~/ 5;
+  troco = troco - (cinco * 5);
+
+  var dois = troco ~/ 2;
+  troco = troco - (dois * 2);
+  
+  var um = troco ~/ 1;
+  troco = troco - (um * 1);
+
+  print(valor);
+
+  print("$cem nota(s) de R\$ 100,00");
+  print("$cinquenta nota(s) de R\$ 50,00");
+  print("$vinte nota(s) de R\$ 20,00");
+  print("$dez nota(s) de R\$ 10,00");
+  print("$cinco nota(s) de R\$ 5,00");
+  print("$dois nota(s) de R\$ 2,00");
+  print("$um nota(s) de R\$ 1,00");
+}
