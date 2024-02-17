@@ -1,0 +1,28 @@
+1)σ area=1 (Curso)
+
+2)π matri, nome (σ bloco=4 ∧ codCur=2 (Aluno))
+
+3)πcodDis,descricao(σbloc = 4 ∧ codCurs = 2 ∧ cargahor≤60(Disciplina))
+
+4)π nome,titulacao (σ ( titulacao = 'MESTRE' ∨ titulacao = 'DOUTOR' ) (Professor) )
+
+5)πmat(σcodDisc=5∧codProfe=8∧periodo=20201(Turma))
+
+6)πmat(σcodDisc=5∧codProfe=8∧periodo=20201(Turma))
+
+7)πmat(σcodDisc=4∧codProfe=13∧periodo=20191∧situacao='APROVADO'(Turma))
+
+8)πcodDisc(σperiodo=20201(Turma))
+
+9)πcodDisc(σperiodo=20201∧codProfe=5(Turma))
+
+10)πmat(σperiodo=20201∧situacao='APROVADO'(Turma))
+
+11)πcodCurs(σbloc=2 ∧ codCurs = 1 ∧ codCurs = 2 ∧ cargahor ≥60(Disciplina))
+
+12)πmat(σcodDisc= 5 ∧periodo = 20201 ∧ situacao = 'REPROVADO'(Turma))
+
+13)πcodDisc(σperiodo = 20191 ∧ situacao = 'REPROVADO'(Turma))
+
+
+

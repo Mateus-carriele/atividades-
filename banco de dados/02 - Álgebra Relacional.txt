@@ -1,0 +1,31 @@
+1) π codProf ( σ titulacao='DOUTOR' (Professor))
+∪
+π codProfe ( σ periodo=20191 (Turma))
+
+2) πcodDis(σbloc = 4 (Disciplina))
+∪
+πcodDisc(σperiodo = 20201 ∧ faltas ≥ 4 (Turma) )
+
+3) πmatri(Aluno)
+-
+πmat(Turma)
+
+4) πcodDis(Disciplina)
+-
+πcodDisc(Turma)
+
+5) πcodProf(Professor)
+-
+πcodProfe(Turma)
+
+6) (σcodCur = codCurso (Aluno⨝Curso))
+
+7) πmatri, descricao(σcodCur = codCurso ∧ bloco= 4 ∧ codCur = 2 (Aluno⨝Curso))
+
+8) π Disciplina.codDis, Disciplina.descricao, Curso.descricao ( σ bloco = 4 and bloc = 4 and codCurso = 2 and codCurs = 2 and cargahor ≤ 60 ( ( Aluno ⨯ Curso ) ⨯ Disciplina ) )
+
+9) π Turma.mat, Disciplina.descricao ( σ codDis = 5 and codProf = 8 and periodo = 20201 ( ( ( Aluno ⨯ Disciplina ) ⨯ Professor ) ⨯ Turma ) )
+
+10) π Disciplina.descricao, Professor.nome ( σ codProfe = codProf and codDis = codDisc and periodo = 20191 ( ( Disciplina ⨯ Professor ) ⨯ Turma ) )
+
+11) π Professor.codProf, Professor.nome ( σ titulacao = 'DOUTOR' and periodo = 20191 ( Professor ⨯ Turma ) ) ∪ π Turma.codProfe, Professor.nome ( σ codProf = codProfe and periodo = 20191 ( Turma ⨯ Professor ) )
